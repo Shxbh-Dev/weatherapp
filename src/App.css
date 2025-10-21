@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  height: 100%;
+  width: 100%;
+  background: #222;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.box{
+  width: 90;
+  max-width: 470px;
+  background: linear-gradient(135deg, seagreen ,lightblue);
   color: white;
+  margin: 100px auto 0;
+  padding: 40px 35px;
+  border-radius: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+  box-shadow: 8px 8px 5px black;
 }
 
-.App-link {
-  color: #61dafb;
+.search{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search input{
+  border: 0;
+  outline: 0;
+  background: white;
+  color: #555;
+  height: 60px;
+  padding: 10px 25px;
+  border-radius: 16px;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 18px;
+}
+
+.search button{
+  border: 0;
+  outline: 0;
+  background: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.weather-icon{
+  height: 232px;
+  border-radius: 20px;
 }
