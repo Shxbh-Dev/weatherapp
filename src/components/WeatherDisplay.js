@@ -5,19 +5,19 @@ function WeatherDisplay({ weather }) {
   const weatherCondition = weather.weather[0].main.toLowerCase();
 
   if (weatherCondition.includes("clouds")) {
-    weatherIconScr = "/hero_weather2.png";
+    weatherIconScr = "/clouds.png";
   } else if (weatherCondition.includes("clear")) {
-    weatherIconScr = "/hero_weather2.png";
+    weatherIconScr = "/clear.png";
   } else if (weatherCondition.includes("rain")) {
-    weatherIconScr = "/hero_weather2.png";
+    weatherIconScr = "/rain.png";
   } else if (weatherCondition.includes("mist")) {
-    weatherIconScr = "/hero_weather2.png";
+    weatherIconScr = "/mist.png";
   } else if (weatherCondition.includes("snow")) {
-    weatherIconScr = "/hero_weather2.png";
+    weatherIconScr = "/snow.png";
   } else if (weatherCondition.includes("drizzle")) {
-    weatherIconScr = "/hero_weather2.png";
+    weatherIconScr = "/drizzle.png";
   } else {
-    weatherIconScr = "/hero_weather2.png";
+    weatherIconScr = "/default.png";
   }
 
   const weatherCal = (weather.main.temp - 273.15).toFixed(1);
