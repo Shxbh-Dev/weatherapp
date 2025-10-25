@@ -4,22 +4,25 @@
   box-sizing: border-box;
 }
 
+
 body{
-  height: 100%;
-  width: 100%;
+ 
   background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .box{
-  width: 90;
-  max-width: 470px;
+  width: 90%;
+  /* max-width: 470px; */
   background: linear-gradient(135deg, seagreen ,lightblue);
   color: white;
-  margin: 100px auto 0;
+  margin-top: 100px;
   padding: 40px 35px;
   border-radius: 20px;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 20px; 
   box-shadow: 8px 8px 5px black;
 }
 
@@ -28,7 +31,8 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  
+  padding: 10px;
 }
 
 .search input{
@@ -37,14 +41,17 @@ body{
   background: white;
   color: #555;
   height: 60px;
-  padding: 10px 25px;
+  padding: 15px;
   border-radius: 16px;
   flex: 1;
-  margin-right: 16px;
+  margin-right: 10px;
   font-size: 18px;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .search button{
+  padding: 10px;
   border: 0;
   outline: 0;
   background: white;
@@ -52,9 +59,38 @@ body{
   width: 60px;
   height: 60px;
   cursor: pointer;
+  margin-right: 35px;
 }
 
 .weather-icon{
   height: 232px;
   border-radius: 20px;
+}
+
+.search-div{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .box {
+    margin-left: 6%;
+    padding: 20px;  
+  }
+
+  .search {
+    gap: 5px;
+  }
+
+  .search input {
+    width: 100%;
+  }
+
+  .search button {
+    padding: 5px;
+    margin-right: 0;
+    width: 20%;
+    border-radius: 50%;
+  }
 }

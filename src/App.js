@@ -40,7 +40,9 @@ function App() {
   return (
     <div className="box">
       <Header />
+      <div className='search-div'>
       <SearchBar onSearch={checkWeather}/>
+      </div>
       {error && <p className='error-message' >{error}</p>}
       {weatherData && <WeatherDisplay weather={weatherData} />}
       <Footer /> 
